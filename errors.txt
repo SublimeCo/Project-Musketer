@@ -1,0 +1,9 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/script.rpy", line 78: expected statement.
+    "Wow, en realidad soy muy afortunado de tener a Star a mi lado... Incluso en momentos incómodos como este en los que me pierdo en mis reflexiones y le doy tiempo de sobra para analizarme y llegar a quién sabe qué clase de juicios, 99.9"+puts("%")+"acertados, sobre mis emociones."
+                                                                                                                                                                                                                                                ^
+
+Ren'Py Version: Ren'Py 6.99.13.2919
