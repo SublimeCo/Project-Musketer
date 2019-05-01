@@ -2,8 +2,13 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 78: expected statement.
-    "Wow, en realidad soy muy afortunado de tener a Star a mi lado... Incluso en momentos incómodos como este en los que me pierdo en mis reflexiones y le doy tiempo de sobra para analizarme y llegar a quién sabe qué clase de juicios, 99.9"+puts("%")+"acertados, sobre mis emociones."
-                                                                                                                                                                                                                                                ^
+File "game/script.rpy", line 153: expected statement.
+    numero = 2;
+           ^
 
-Ren'Py Version: Ren'Py 6.99.13.2919
+File "game/script.rpy", line 222: expected statement.
+    numero = 1
+           ^
+
+Ren'Py Version: Ren'Py 7.2.2.491
+Tue Apr 30 18:57:44 2019

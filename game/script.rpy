@@ -1,6 +1,7 @@
 # Coloca el código de tu juego en este archivo.
 
 # Declara los personajes usados en el juego como en el ejemplo:
+$ numero = 0
 
 define s = Character("Star")
 define m = Character("Matt")
@@ -30,6 +31,7 @@ label start:
     # Muestra una imagen de fondo:
 
     scene cuartoNoche
+    play music audio.Hanging
 
     # Muestra un personaje:
 
@@ -149,9 +151,10 @@ label start:
         "Observo mi reloj, el cual marca la 1:17 a.m"
         s "¿Vamos?"
         "Cruzamos nuestros brazos y nos dirigimos a casa. Fue buena idea llevar a Starfire, su compañía me ha hecho bien. Si tuviera la oportunidad de darle nombre a este momento, le llamaría “Ideología de una noche perfecta (para Matt)”."
+        $ numero = 2
+        jump AfterScene
 
-
-    
+        
     label Irme_Solo:
 
         "Creo que ahora lo más conveniente es ir sin ella. Estar solo me ayuda a reflexionar mejor y a sumergirme en mis pensamientos sin preocuparme por nada más."
@@ -217,10 +220,14 @@ label start:
         "Una vez dentro de mi casa voy a mi cuarto, me tiro sobre el colchón y me acomodo. Me quedo mirando un rato hacia el techo, pensando, antes de sonreír levemente y decir a nadie en particular."
         m "Buenas noches."
         "Cierro los ojos y busco la forma de conciliar el sueño."
+        $ numero = 1
         jump AfterScene
 
 label AfterScene:
-
+    if (numero == 1):
+        "Tomaste la primera decision"
+    if (numero == 2):
+        "Tomaste la segunda decision"
     # Finaliza el juego:
 
     return
